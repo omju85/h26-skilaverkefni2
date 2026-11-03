@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The need to do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Hlutir sem ég þarf að gera en mun líklega gleyma en ég má ekki gleyma
+      </h1>
+      <div class="stats">
+        <p>Heildarfjöldi: <span id="total">0</span></p>
+        <p>Lokið - Vel gert, gamli: <span id="done">0</span></p>
+        <p>Ólokið - Get going!: <span id="not-done">0</span></p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Nýtt verkefni</h2>
+        <form id="verkefna-form">
+          <label for="verkefni">Bæta við verkefni</label>
+          <input
+            type="text"
+            placeholder="ekki gleyma að fara í sturtu"
+            id="verkefni"
+          />
+
+          <button type="submit">Bæta við</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Verkefnin mín</h2>
+        <ul id="verkefnalistinn"></ul>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Ómar Júlíusson</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
