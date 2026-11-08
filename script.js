@@ -16,6 +16,7 @@ function renderTasks() {
 
   for (const task of tasks) {
     const li = document.createElement("li");
+
     const titleEl = document.createElement("span");
     titleEl.textContent = task.title;
     li.appendChild(titleEl);
@@ -23,8 +24,13 @@ function renderTasks() {
     if (task.done) {
       li.classList.add("done");
     }
+
     const doneBtn = document.createElement("button");
-    doneBtn.textContent = "Lokið";
+    if (task.done) {
+      doneBtn.textContent = "Afturkalla";
+    } else {
+      doneBtn.textContent = "Lokið";
+    }
     li.appendChild(doneBtn);
     doneBtn.addEventListener("click", () => {
       toggleTask(task.id);

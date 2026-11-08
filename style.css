@@ -52,7 +52,7 @@ input {
 button {
   padding: 4px 14px;
   background-color: rgb(121, 235, 182);
-  color: rgb(91, 124, 125);
+  color: darkslategray;
   border: 1px dashed gray;
   border-radius: 4px;
   cursor: pointer;
@@ -74,12 +74,13 @@ li {
 
 button:hover {
   background-color: blueviolet;
+  color: white;
 }
 
 li.done span {
   text-decoration: line-through;
   opacity: 0.5;
-  color: chocolate;
+  color: rgb(222, 229, 137);
 }
 
 li span {
