@@ -9,3 +9,79 @@ body {
   background-color: darkslategray;
   color: white;
 }
+
+header,
+main,
+footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+}
+
+.stats p {
+  padding: 12px;
+  border: 2px solid rgb(18, 147, 202);
+  margin: 0px;
+  border-radius: 8px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+form {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+input {
+  flex-grow: 1;
+  padding: 6px;
+}
+
+button {
+  padding: 4px 14px;
+  background-color: rgb(121, 235, 182);
+  color: rgb(91, 124, 125);
+  border: 1px dashed gray;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+  background-color: blueviolet;
+}
+
+li.done span {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: chocolate;
+}
+
+li span {
+  flex-grow: 1;
+}

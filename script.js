@@ -16,7 +16,9 @@ function renderTasks() {
 
   for (const task of tasks) {
     const li = document.createElement("li");
-    li.textContent = task.title;
+    const titleEl = document.createElement("span");
+    titleEl.textContent = task.title;
+    li.appendChild(titleEl);
     listEl.appendChild(li);
     if (task.done) {
       li.classList.add("done");
